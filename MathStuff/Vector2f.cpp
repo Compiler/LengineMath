@@ -13,8 +13,20 @@ Vector2f::Vector2f(float xd, float yd){
 }
 
 
-Vector2f Vector2f::projectOnto(Vector2f vec){
+Vector2f Vector2f::getProjectionOnto(Vector2f vec){
+	/*
+		(u * v)
+		------- * u
+		(u * u)
+		
+	*/
+	float projScalar = (dot(*this, vec)) / (dot(*this, *this));
+	return Vector2f(projScalar * x, projScalar * y);
 
+}
+
+void Vector2f::projectOnto(Vector2f vec){
+	
 
 
 }
@@ -32,11 +44,15 @@ Vector2f Vector2f::getNormalized(){
 
 float Vector2f::angleBetween(Vector2f vec){
 
+
+
+	return 0;
 }
 
 
 float Vector2f::magnitude(){
-	return sqrtf(pow(x, 2) + pow(y, 2));
+	
+	return sqrtf(powf(x, 2) + powf(y, 2));
 }
 
 

@@ -10,14 +10,19 @@ public:
 
 
 
+	float dot(Vector2f me, Vector2f you){
+		return (me.x * you.x) + (me.y * you.y);
+	}
+
+
 	float angleBetween(Vector2f vec);
 	float magnitude();
 
-	Vector2f projectOnto(Vector2f vec);
+	Vector2f getProjectionOnto(Vector2f vec);
 	Vector2f getNormalized();
 
 	void normalize();
-
+	void projectOnto(Vector2f vec);
 
 	float x, y;
 

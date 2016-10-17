@@ -1,4 +1,3 @@
 ﻿  main.cpp
-c:\users\user\documents\visual studio 2015\projects\mathstuff\mathstuff\main.cpp(15): error C2678: binary '^': no operator found which takes a left-hand operand of type 'std::basic_ostream<char,std::char_traits<char>>' (or there is no acceptable conversion)
-  c:\users\user\documents\visual studio 2015\projects\mathstuff\mathstuff\main.cpp(15): note: could be 'built-in C++ operator^(bool, int)'
-  c:\users\user\documents\visual studio 2015\projects\mathstuff\mathstuff\main.cpp(15): note: while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, int)'
+  MathStuff.vcxproj -> c:\users\user\documents\visual studio 2015\Projects\MathStuff\Debug\MathStuff.exe
+  MathStuff.vcxproj -> c:\users\user\documents\visual studio 2015\Projects\MathStuff\Debug\MathStuff.pdb (Partial PDB)
