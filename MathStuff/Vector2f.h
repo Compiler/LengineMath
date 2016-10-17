@@ -24,6 +24,8 @@ public:
 	void normalize();
 	void projectOnto(Vector2f vec);
 
+
+	//x and y components
 	float x, y;
 
 
