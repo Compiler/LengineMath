@@ -18,9 +18,7 @@ int main(){
 	std::cin >> x1;
 	std::cin >> y1;
 	Vector2f vec2(x1, y1);
-	vec1.projectOnto(vec2);
-//	vec1.normalize();
-	std::cout << "\nProjection: " << vec1.x << "," << vec1.y;
+	std::cout << "\nAngle: " << vec1.angleBetween(vec2);
 
 	char studder;
 	std::cin >> studder;

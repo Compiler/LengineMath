@@ -1,11 +1,14 @@
 #include "Vector2f.h"
 #include "iostream"
 
+
+#define TO_DEG 180/3.14159265359
+
 /*
 	Defaults current Vector2f object to 0 0
 */
 Vector2f::Vector2f(): x(0), y(0){
-
+	
 
 }
 /*
@@ -14,6 +17,7 @@ Vector2f::Vector2f(): x(0), y(0){
 Vector2f::Vector2f(float xd, float yd){
 	x = xd;
 	y = yd;
+	
 }
 
 
@@ -67,10 +71,7 @@ Vector2f Vector2f::getNormalized(){
 	and the given 'vec' Vector2f object
 */
 float Vector2f::angleBetween(Vector2f vec){
-
-
-
-	return 0;
+	return acosf(dot(*this, vec) / (magnitude() * vec.magnitude())) * TO_DEG;
 }
 
 
