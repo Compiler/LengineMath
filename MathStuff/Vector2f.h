@@ -11,9 +11,6 @@ public:
 
 
 	float dot(Vector2f me, Vector2f you){
-		std::cout << me.x << " * " << you.x << " = " << me.x *you.x << "\n";
-		std::cout << me.y << " * " << you.y << " = " << me.y *you.y << "\n";
-		std::cout << "together makes: " << (me.x * you.x) + (me.y * you.y) << "\n";
 		return (me.x * you.x) + (me.y * you.y);
 	}
 
