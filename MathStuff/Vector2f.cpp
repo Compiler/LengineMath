@@ -1,5 +1,5 @@
 #include "Vector2f.h"
-
+#include "iostream"
 
 
 Vector2f::Vector2f(): x(0), y(0){
@@ -26,9 +26,16 @@ Vector2f Vector2f::getProjectionOnto(Vector2f vec){
 }
 
 void Vector2f::projectOnto(Vector2f vec){
-	
+	std::cout << "dotting " << this->x << ", " << this->y << " with " << vec.x << ", " << vec.y << std::endl;
+	float first = dot(*this, vec);
+	std::cout << "dotting " << this->x << ", " << this->y << " with " << this->x << ", " << this->y << std::endl;
+	float second = dot(*this, *this);
 
-
+	float projScalar = first / second;
+	std::cout << "resulting : " << projScalar << "\n"; 
+	x = x * projScalar;
+	y = y * projScalar;
+	std::cout << dot(*this, vec);
 }
 
 

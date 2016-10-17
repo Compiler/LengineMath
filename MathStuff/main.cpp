@@ -17,11 +17,10 @@ int main(){
 	float x1, y1;
 	std::cin >> x1;
 	std::cin >> y1;
-	Vector2f vec2(x, y);
-//	vec1.projectOnto(vec2);
-	//vec1.normalize();
-	//std::cout << "Projection: " << vec1.x << "," << vec1.y;
-	std::cout << vec1.magnitude();
+	Vector2f vec2(x1, y1);
+	vec1.projectOnto(vec2);
+//	vec1.normalize();
+	std::cout << "\nProjection: " << vec1.x << "," << vec1.y;
 
 	char studder;
 	std::cin >> studder;
