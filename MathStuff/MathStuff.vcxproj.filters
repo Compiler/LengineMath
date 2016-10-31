@@ -24,12 +24,18 @@
     <ClCompile Include="Vector3f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mat2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2f.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Vector3f.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mat2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
