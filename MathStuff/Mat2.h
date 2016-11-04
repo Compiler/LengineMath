@@ -7,7 +7,7 @@ public:
 
 	void dot(Mat2 matrix);
 	Mat2 getDot(Mat2 matrix);
-
+	float elementAt(int x, int y);
 
 
 	~Mat2();

@@ -1,6 +1,6 @@
 #include "Mat2.h"
 
-
+#define NO -7071
 
 Mat2::Mat2(float topLeft, float topRight, float bottomLeft, float bottomRight){
 
@@ -41,6 +41,11 @@ void Mat2::dot(Mat2 matrix){
 	mat[1][1] = bottomRight;
 	
 
+}
+
+float Mat2::elementAt(int x, int y) {
+	//return mat[x < 2 ? x >= 0 ? x : 0 : break][y < 2 ? y >= 0 ? y : 0 : NO];
+	return mat[x][y];
 }
 
 Mat2 Mat2::getDot(Mat2 matrix){

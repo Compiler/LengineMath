@@ -1,33 +1,24 @@
 #include "iostream"
-#include "Vector2f.h"
+#include "Mat2.h"
 
 
-void printVec(Vector2f vec, int num) {
-	std::cout << "V" << num << " [" << vec.x << "  " << vec.y << "]\n";
+void printMat(Mat2 mat, int num) {
+	std::cout << "\nM" << num << " [" << mat.elementAt(0, 0) << "  " << mat.elementAt(1, 0) << "]\n   [" << mat.elementAt(0, 1) << "  " << mat.elementAt(1, 1) << "]\n";
 }
 
 
 
 int main(){
+
+	Mat2 mat1(1.0f, 2.0f, 0.0f, 1.0f);
+	Mat2 mat2(12.0f, 30.0f, 5.0f, 15.0f);
+
+	printMat(mat1, 1);
+	printMat(mat2, 2);
+	mat1.dot(mat2);
+	std::cout << "\nDot of M1 & M2 = ";
+	printMat(mat1, 3);
 	
-
-	Vector2f p1(100.0f, 250.0f);
-	Vector2f p2(300.0f, 50.0f);
-	printVec(p1, 1);
-	printVec(p2, 2);
-
-	std::cout << "normalizing V1 & V2...\n\n";
-	p2.normalize();
-
-	printVec(p1, 1);
-	printVec(p2, 2);
-
-	std::cout << "\nAngle between V1 and V2 = " << p1.angleBetween(p2);
-
-
-	std::cout << "\n V1 dot V2 = " << Vector2f::dot(p1, p2);
-	
-
 	char studder;
 	std::cin >> studder;
 	return 0;
