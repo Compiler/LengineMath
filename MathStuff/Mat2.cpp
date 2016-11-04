@@ -11,7 +11,7 @@ Mat2::Mat2(float topLeft, float topRight, float bottomLeft, float bottomRight){
 
 }
 
-void Mat2::dotMat2(Mat2 matrix){
+void Mat2::dot(Mat2 matrix){
 
 	/*
 		
@@ -43,7 +43,7 @@ void Mat2::dotMat2(Mat2 matrix){
 
 }
 
-Mat2 Mat2::getDotMat2(Mat2 matrix){
+Mat2 Mat2::getDot(Mat2 matrix){
 
 	/*
 

@@ -21,6 +21,7 @@ public:
 	Vector2f getProjectionOnto(Vector2f vec);
 	Vector2f getNormalized();
 
+
 	void normalize();
 	void projectOnto(Vector2f vec);
 

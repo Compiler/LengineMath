@@ -4,18 +4,13 @@
 int main(){
 	
 
-	float x, y;
-	std::cin >> x;
-	std::cin >> y;
-
-	Vector2f vec1(x, y);
-
-	float x1, y1;
-	std::cin >> x1;
-	std::cin >> y1;
-	Vector2f vec2(x1, y1);
-	std::cout << "\nAngle: " << vec1.angleBetween(vec2);
-
+	Vector2f p1(100.0f, 250.0f);
+	Vector2f p2(300.0f, 50.0f);
+	std::cout << "V1 [" << p1.x << "  " << p1.y << "]^T\n";
+	std::cout << "V2 [" << p2.x << "  " << p2.y << "]^T\n";
+	std::cout << "normalizing V2...\n";
+	p2.normalize();
+	std::cout << "V2 [" << p2.x << "  " << p2.y << "]^T\n";
 	char studder;
 	std::cin >> studder;
 	return 0;

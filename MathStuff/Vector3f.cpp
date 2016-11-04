@@ -48,9 +48,9 @@ Normalizes the current Vector3f object to be
 normalized
 */
 void Vector3f::normalize(){
-	x = x * magnitude();
-	y = y * magnitude();
-	z = z * magnitude();
+	x = x / magnitude();
+	y = y / magnitude();
+	z = z / magnitude();
 }
 
 /*
@@ -58,7 +58,7 @@ Returns a Vector3f object of the normalized current
 Vector3f object called upon
 */
 Vector3f Vector3f::getNormalized(){
-	return Vector3f(magnitude() * x, magnitude() * y, magnitude() * z);
+	return Vector3f(x / magnitude(), y / magnitude(), z / magnitude());
 }
 
 /*

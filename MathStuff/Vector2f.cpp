@@ -54,8 +54,8 @@ void Vector2f::projectOnto(Vector2f vec){
 	normalized
 */
 void Vector2f::normalize(){
-	x = x * magnitude();
-	y = y * magnitude();
+	x = x / magnitude();
+	y = y / magnitude();
 }
 
 /*
@@ -63,7 +63,7 @@ void Vector2f::normalize(){
 	Vector2f object called upon
 */
 Vector2f Vector2f::getNormalized(){
-	return Vector2f(magnitude() * x, magnitude() * y);
+	return Vector2f(x / magnitude(), y / magnitude());
 }
 
 /*

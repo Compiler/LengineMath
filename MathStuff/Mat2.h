@@ -5,8 +5,11 @@ public:
 
 	float mat[2][2];
 
-	void dotMat2(Mat2 matrix);
-	Mat2 getDotMat2(Mat2 matrix);
+	void dot(Mat2 matrix);
+	Mat2 getDot(Mat2 matrix);
+
+
+
 	~Mat2();
 
 
