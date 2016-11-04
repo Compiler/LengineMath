@@ -10,7 +10,7 @@ public:
 
 
 
-	float dot(Vector2f me, Vector2f you){
+	static float dot(Vector2f me, Vector2f you){
 		return (me.x * you.x) + (me.y * you.y);
 	}
 

@@ -1,16 +1,33 @@
 #include "iostream"
 #include "Vector2f.h"
 
+
+void printVec(Vector2f vec, int num) {
+	std::cout << "V" << num << " [" << vec.x << "  " << vec.y << "]\n";
+}
+
+
+
 int main(){
 	
 
 	Vector2f p1(100.0f, 250.0f);
 	Vector2f p2(300.0f, 50.0f);
-	std::cout << "V1 [" << p1.x << "  " << p1.y << "]^T\n";
-	std::cout << "V2 [" << p2.x << "  " << p2.y << "]^T\n";
-	std::cout << "normalizing V2...\n";
+	printVec(p1, 1);
+	printVec(p2, 2);
+
+	std::cout << "normalizing V1 & V2...\n\n";
 	p2.normalize();
-	std::cout << "V2 [" << p2.x << "  " << p2.y << "]^T\n";
+
+	printVec(p1, 1);
+	printVec(p2, 2);
+
+	std::cout << "\nAngle between V1 and V2 = " << p1.angleBetween(p2);
+
+
+	std::cout << "\n V1 dot V2 = " << Vector2f::dot(p1, p2);
+	
+
 	char studder;
 	std::cin >> studder;
 	return 0;
